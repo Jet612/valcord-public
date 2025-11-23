@@ -1,0 +1,10 @@
+import os
+
+VALCORD_DISCORD_TOKEN = os.getenv("VALCORD_DISCORD_TOKEN", "")
+BETA_DISCORD_TOKEN = os.getenv("BETA_DISCORD_TOKEN", "")
+IPC_SECRET = os.getenv("IPC_SECRET", VALCORD_DISCORD_TOKEN)
+RIOT_API_KEY = os.getenv("RIOT_API_KEY", "")
+DEVELOPER_GUILD_IDS = [int(x) for x in os.getenv("DEVELOPER_GUILD_IDS", "").split(",") if x]
+DEVLELOPER_LOGS_CHANNEL_ID = int(os.getenv("DEVLELOPER_LOGS_CHANNEL_ID", "0"))
+VALCORD_GUILD_ID = int(os.getenv("VALCORD_GUILD_ID", "0"))
+TOPGG_TOKEN = os.getenv("TOPGG_TOKEN", "")
